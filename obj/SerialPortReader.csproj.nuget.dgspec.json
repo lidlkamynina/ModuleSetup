@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vrstudents\\Desktop\\SerialSockTest\\SerialPortReader\\SerialPortReader.csproj": {}
+    "C:\\Users\\vrstudents\\Desktop\\ModuleSetup\\ModuleSetup\\SerialPortReader.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vrstudents\\Desktop\\SerialSockTest\\SerialPortReader\\SerialPortReader.csproj": {
+    "C:\\Users\\vrstudents\\Desktop\\ModuleSetup\\ModuleSetup\\SerialPortReader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vrstudents\\Desktop\\SerialSockTest\\SerialPortReader\\SerialPortReader.csproj",
+        "projectUniqueName": "C:\\Users\\vrstudents\\Desktop\\ModuleSetup\\ModuleSetup\\SerialPortReader.csproj",
         "projectName": "SerialPortReader",
-        "projectPath": "C:\\Users\\vrstudents\\Desktop\\SerialSockTest\\SerialPortReader\\SerialPortReader.csproj",
+        "projectPath": "C:\\Users\\vrstudents\\Desktop\\ModuleSetup\\ModuleSetup\\SerialPortReader.csproj",
         "packagesPath": "C:\\Users\\vrstudents\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vrstudents\\Desktop\\SerialSockTest\\SerialPortReader\\obj\\",
+        "outputPath": "C:\\Users\\vrstudents\\Desktop\\ModuleSetup\\ModuleSetup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

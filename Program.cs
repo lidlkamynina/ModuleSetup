@@ -4,6 +4,8 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 //run it TWICE to see the changes
+// change the com port 
+//change the module number inside of setModuleName()
 class Program
 {
     private static SerialPort? serialPort;
@@ -27,7 +29,7 @@ class Program
             InitializeSerialPort(comPort, baudRate);
             serialPort!.Open();
             Console.WriteLine($"Connected to {comPort}. Setting module name...");
-            SetModuleName(11); // Set the module name to "11" - module number
+            SetModuleName(); // Set the module name to "11" - module number, inside of the method
 
             while (true) 
             {
@@ -88,11 +90,11 @@ class Program
         }
     }
 
-    private static void SetModuleName()
+    private static void SetModuleName() // set module name here!
     {
         try
         {
-            byte[] command = Encoding.ASCII.GetBytes("BTS6=13\r");
+            byte[] command = Encoding.ASCII.GetBytes("BTS6=11\r"); //replace 11, with module number after "="
             serialPort?.Write(command, 0, command.Length);
             Console.WriteLine("Command sent: BTS6=...");
             SendCommand("BT^TRES");
