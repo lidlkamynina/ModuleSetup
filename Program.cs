@@ -3,7 +3,7 @@ using System.IO.Ports;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-
+//run it TWICE to see the changes
 class Program
 {
     private static SerialPort? serialPort;
@@ -19,7 +19,7 @@ class Program
     static void Main(string[] args)
     {
         AllocConsole();
-        string comPort = "COM11"; // Replace with your COM port
+        string comPort = "COM11"; // Replace with your COM port. Find in Bluetooth settings COM ports, look for incoming direction from module
         int baudRate = 92160;
 
         try
@@ -27,9 +27,9 @@ class Program
             InitializeSerialPort(comPort, baudRate);
             serialPort!.Open();
             Console.WriteLine($"Connected to {comPort}. Setting module name...");
-            SetModuleName(); // Set the module name to "11"
+            SetModuleName(11); // Set the module name to "11" - module number
 
-            while (true) // Keeps the console running until manually closed
+            while (true) 
             {
                 Thread.Sleep(100);
             }
