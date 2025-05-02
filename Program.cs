@@ -12,7 +12,6 @@ class Program
     private const byte StartByte = 0xF0; // Start of packet
     private const byte StopByte = 0x55;  // End of packet
     private static bool moduleNameRetrieved = false;
-    private static string moduleName = "Unknown";
 
     [System.Runtime.InteropServices.DllImport("kernel32.dll")]
     private static extern bool AllocConsole();
@@ -21,7 +20,7 @@ class Program
     static void Main(string[] args)
     {
         AllocConsole();
-        string comPort = "COM11"; // Replace with your COM port. Find in Bluetooth settings COM ports, look for incoming direction from module
+        string comPort = "COM3"; // Replace with your COM port. Find in Bluetooth settings(More Bluetooth options) COM ports, look for outgoing direction from module
         int baudRate = 92160;
 
         try
@@ -94,7 +93,7 @@ class Program
     {
         try
         {
-            byte[] command = Encoding.ASCII.GetBytes("BTS6=11\r"); //replace 11, with module number after "="
+            byte[] command = Encoding.ASCII.GetBytes("BTS6=17\r"); //replace 11, with module number after "="
             serialPort?.Write(command, 0, command.Length);
             Console.WriteLine("Command sent: BTS6=...");
             SendCommand("BT^TRES");

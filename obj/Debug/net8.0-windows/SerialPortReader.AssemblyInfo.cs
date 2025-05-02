@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialPortReader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c987c3c05c257d8bba60da0225e7229700ae6a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4617f9c3314dfe69b2363a551838e00d5d53732")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialPortReader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialPortReader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
